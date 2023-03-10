@@ -1,0 +1,160 @@
+#main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 1920px;
+    height: 1080px;
+    left: 0px;
+    top: 0px;
+
+}
+.label_tag{
+    display: flex;
+    justify-content: center;
+    width: 158px;
+    height: 23.65px;
+    left: 725px;
+    top: 286px;
+
+    font-family: 'Noto Sans CJK KR';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height */
+    color: #797979;
+}s
+.info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    padding-top: 200px;
+
+    width: 466px;
+}
+.input{
+
+}
+.gender_radio{
+
+    width: 20px;
+    height: 19.95px;
+    left: 975px;
+    top: 721px;
+
+    background: #EBEBEB;
+    border: 1px solid #D2D2D2;
+}
+.radio_button{
+    display: flex;
+    justify-content: center;
+    
+    font-family: 'Noto Sans CJK KR';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+#signup{
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+    width: 670px;
+    height: 960px;
+    left: 625px;
+    top: 60px;
+
+    background: #FFFFFF;
+    border: 1px solid #AACDFF;
+    box-shadow: 7px 7px 39px rgba(0, 104, 255, 0.25);
+    border-radius: 20px;
+}
+
+#checker{
+    display: flex;
+    justify-content: center;
+
+    font-family: 'Noto Sans CJK KR';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+
+    padding : 10px;
+}
+
+#checker_box{
+    width: 40px;
+    height: 20px;
+    left: 737px;
+    top: 792.94px;
+
+    background: #FFFFFF;
+    border: 1px solid #C4C4C4;
+    border-radius: 3px;
+}
+#logo{
+    display: flex;
+    justify-content: center;
+    width: 466px;
+    height: 94px;
+    left: 725px;
+    top: 132px;
+
+    font-family: 'Noto Sans CJK KR';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 47px;
+
+    color: #0068FF;
+}
+#hr{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 470px;
+    height: 1px;
+    left: 725px;
+    top: 844px;
+
+    background: #E6E6E6;
+}
+#button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 470px;
+    height: 75px;
+    left: 725px;
+    top: 875px;
+
+    font-family: 'Noto Sans CJK KR';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    /* identical to box height */
+
+    text-align: center;
+
+    color: #0068FF;
+
+    background: #FFFFFF;
+    border: 1px solid #0068FF;
+    border-radius: 10px;
+}
+#bt{
+    box-sizing: border-box;
+
+    padding: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

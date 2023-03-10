@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title>회원가입</title>
+    <!-- href : 파일 주소, rel : 관계 -->
+    <link href="./02-signup.css" rel="stylesheet">
+</head>
+<body>
+    <div id="main">
+        <div id="signup">
+            <h2 id="logo">회원 가입을 위해<br>정보를 입력해주세요</h2>
+            <div class="info">
+                <label class="label_tag">* 이메일</label>
+                <input class="input" type="text"><br><br> <!-- placeholder => 입력창에 텍스트 표시 -->
+                
+                <label class="label_tag">* 이름</label>
+                <input class="input" type="text"><br><br>
+                
+                <label class="label_tag">* 비밀번호</label>
+                <input class="input" type="password"><br><br>
+                
+                <label class="label_tag">* 비밀번호 확인</label>
+                <input class="input" type="password" ><br><br>
+            </div>
+            <div class="radio_button">
+                <input class="gender_radio" type="radio" name="gender">여성  <!-- name="gender" 로 한 그룹에 묶어서 여성과 남성 중 하나만 선택되게 함. -->
+                <input class="gender_radio" type="radio" name="gender">남성
+            </div>
+            <br><br>
+            <div id="checker">
+                <input id="checker_box" type="checkbox"> 이용약관 개인정보 수집 및 이용, 마케팅 활용 선택에 모두 동의합니다.
+            </div>
+            <hr id="hr">
+            <div id="bt">
+                <button id="button">가입하기</button>
+            </div>
+            <!-- <input type="button" value="가입하기"> -->
+        </div>
+    </div>
+</body>
+</html>
