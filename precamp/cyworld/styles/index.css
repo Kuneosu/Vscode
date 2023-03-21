@@ -53,9 +53,21 @@
     font-size: 9px;
     line-height: 9px;
     text-align: right;
+}
 
-    color: #55B2D4;
+#todayNumber{
+    font-family: 'Malgun Gothic';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    color: #FF0000;
+}
 
+#totalNumber{
+    font-family: 'Malgun Gothic';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
 }
 
 .wrapper__left__body {
@@ -161,9 +173,28 @@ i{
 
 }
 
-.right__header__title, .right__header__setting{
+.right__header__title{
+    margin-bottom: 8px;
+
     color: #55b2e4;
-    font-size: 9px;
+    font-family: 'Malgun Gothic';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.right__header__setting{
+    font-family: 'PFStardust';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+}
+
+#arrow{
+    width: 4px;
+    height: 6px;
+
+    color: #FF6400;
 }
 
 .right__header__title{
