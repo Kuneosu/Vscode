@@ -1,11 +1,35 @@
-// 함수 선언식
-// function rn(){
-//     const token = String(Math.floor(Math.random()*1000000)).padStart(6,"0")
-//     document.getElementById("number").innerText = token
-// }
+const changeFocus1 = () =>{
+
+    let phone1 = document.getElementById("p1").value
+    if(phone1.length === 3){
+        document.getElementById("p2").focus()
+    }
+}
+
+const changeFocus2 = () =>{
+
+    let phone2 = document.getElementById("p2").value
+    if(phone2.length === 4){
+        document.getElementById("p3").focus()
+    }
+}
+
+const checkValidation = function() {
+
+    let p1 = document.getElementById("p1").value
+    let p2 = document.getElementById("p2").value
+    let p3 = document.getElementById("p3").value
+
+    if(p1.length===3&&p2.length===4&&p3.length===4){
+        // 모든 input 이 비어있지 않을 때
+        document.getElementById("send").disabled=false
+    }else{
+        // 하나라도 비어 있을 때
+        document.getElementById("send").disabled=true
+    }
+}
 
 
-// 화살표 함수
 let isStarted = false
 const auth = () => {
 
