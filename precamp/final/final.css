@@ -1,0 +1,297 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 20px;
+}
+
+/* 메인프레임 */
+.frame{ 
+    width: 540px;
+    height: 960px;
+
+    display: flex;
+    justify-content: center;
+
+    padding-top: 60px;
+    padding-bottom: 53px;
+
+    background-color: white;
+
+    border: 1px solid #AACDFF;
+    box-shadow: 7px 7px 39px rgba(0, 104, 255, 0.25);
+    border-radius: 20px;
+}
+
+/* 내부 컨텐츠 프레임 */
+.contents{
+    padding: 0px;
+    width: 380px;
+    height: 847px;
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+/* 제목 박스 */
+.title{
+    width: 100%;
+    height: 47px;
+    padding:0px;
+    margin-bottom: 40px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    font-family: 'Noto Sans KR';
+    font-weight: 700;
+    font-size: 32px;
+    
+    color: #0068FF;
+}
+
+/* 개인정보 칸 */
+.input{
+    width: 100%;
+    height: 380px;
+    padding : 0px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+
+}
+
+/* 개인정보 입력 박스 */
+.info{
+    background-color: white;
+    border: 1px solid #d2d2d2;
+    border-radius: 7px;
+
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+/* 휴대폰 인증 칸 */
+.auth{
+    width: 100%;
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    padding : 0px;
+}
+
+/* 휴대폰 번호 칸 */
+.phoneNumber{
+    display: flex;
+    flex-direction: row;
+    padding: 0px;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+/* 휴대폰 번호 입력 박스 */
+.phone{
+    width: 100px;
+    height: 40px;
+
+    border: 1px solid #d2d2d2;
+    border-radius: 7px;
+}
+
+
+/* 인증번호 칸 */
+.send{
+    padding : 8px 0px 0px 0px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    
+    font-family: 'Noto Sans KR';
+    font-weight: 400;
+    font-size: 18px;
+
+    color: #0068FF;
+}
+
+/* 인증번호 전송 버튼 */
+#send__button{
+    width: 120px;
+    height: 40px;
+    padding: 0px;
+
+    border: 1px solid #d2d2d2;
+    border-radius: 7px;
+
+    font-family: 'Noto Sans KR';
+    font-weight: 400;
+    font-size: 16px;
+
+}
+
+/* 타이머 + 인증완료 칸 */
+.finish{
+    padding: 0px;
+    height: 45px;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+
+    font-family: 'Noto Sans KR';
+    font-weight: 400;
+    font-size: 18px;
+
+    color: #0068FF;
+}
+
+/* 인증완료 버튼 */
+#finish__button{
+    width: 120px;
+    height: 40px;
+    padding: 0px;
+
+    border: 1px solid #d2d2d2;
+    border-radius: 7px;
+
+    font-family: 'Noto Sans KR';
+    font-weight: 400;
+    font-size: 16px;
+
+    
+}
+
+/* 지역 선택 칸 */
+.region{
+    width: 100%;
+    height: 90px;
+    padding: 0px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+/* 지역 선택 셀렉트 박스 */
+#city{
+    width: 100%;
+    height: 65px;
+
+    color: #797979;
+
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+
+    border: 1px solid #d2d2d2;
+    border-radius: 7px;
+}
+
+/* 성별 선택 칸 */
+.gender{
+    width: 100%;
+    height: 32px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    padding: 0px;
+    margin: 0px;
+
+}
+
+/* 라디오 박스 속성 변경 */
+[type="radio"]{
+    appearance: none;
+    border: 1px solid #d2d2d2;
+    background-color: #ebebeb;
+    width: 20px;
+    height: 19.95px;
+    border-radius: 50%;
+}
+
+[type="radio"]:checked {
+    background-color: white;
+    border: 5px solid #0068FF;
+}
+
+[type="radio"]:hover {
+    background-color: white;
+    cursor: pointer;
+  }  
+
+
+/* 성별 선택 라디오 박스 */
+.genderRadio{
+
+    margin-left: 10px;
+    margin-right: 5px;
+    padding: 0px;
+
+}
+
+.genderRadio :checked{
+    border : 1px solid #0068FF;
+}
+
+/* 성별 선택 문자열 */
+.genderText{
+    margin-right: 10px;
+    padding: 0px;
+}
+
+/* 분리선 */
+.divideLine{
+    width: 100%;
+    height: 0px;
+    padding: 0px;
+    margin: 20px 0px 20px 0px;
+    
+    border: 1px solid #e6e6e6;
+}
+
+/* 가입하기 버튼 칸 */
+.button{
+    width: 100%;
+    height: 95px;
+    padding: 0px;
+
+}
+
+/* 가입 버튼 박스 */
+.signupButton{
+    width: 100%;
+    height: 75px;
+
+    font-family: 'Noto Sans KR';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+
+    border: 1px solid #e6e6e6;
+    border-radius: 10px;
+
+}
+
+.errMsg{
+    padding:0px;
+    margin: 0px;
+    margin-bottom: 10px;
+
+    font-size: 12px;
+    text-align: center;
+    
+    color: red;
+}

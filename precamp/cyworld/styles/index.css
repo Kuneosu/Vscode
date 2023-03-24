@@ -244,3 +244,8 @@ iframe{
     font-weight: 500;
     cursor: pointer;
 }
+
+#naviHome{
+    background-color: white;
+    color: black;
+}

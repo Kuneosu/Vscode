@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title>FINAL 과제</title>
+    <link href="./final.css" rel="stylesheet">
+    <script src="./final.js"></script>
+</head>
+<body>
+    <div class="frame">
+        <div class="contents">
+            <div class="title">코드캠프 회원가입</div>
+            <div class="input">
+                <input id = "info__email" class="info" type="text" placeholder="이메일을 입력해 주세요.">
+                <span id = "errEmail" class="errMsg"></span>
+                <input id = "info__name" class="info" type="text" placeholder="이름을 입력해 주세요.">
+                <span id = "errName" class="errMsg"></span>
+                <input id = "info__pw" class="info" type="text" placeholder="비밀번호를 입력해 주세요.">
+                <span id = "errPw" class="errMsg"></span>
+                <input id = "info__pwc" class="info" type="text" placeholder="비밀번호를 다시 입력해 주세요.">
+                <span id = "errPwc" class="errMsg"></span>
+            </div>
+            <div class="auth">
+                <div class="phoneNumber">
+                    <input id="p1" class="phone" type="text" maxlength="3" oninput="changeFocus1(),checkValidation()">―
+                    <input id="p2" class="phone" type="text" maxlength="4" oninput="changeFocus2(),checkValidation()">―
+                    <input id="p3" class="phone" type="text" maxlength="4" oninput="checkValidation()">
+                </div>
+                <div class="send">
+                    <span id="number">000000</span>
+                    <button id="send__button" onclick="auth()" disabled="true">인증번호 전송</button>
+                </div>
+                <div class="finish">
+                    <span id="timer">3:00</span>
+                    <button id="finish__button" onclick="finish()" disabled="true">인증확인</button>
+                </div>
+            </div>
+            <div class="region">
+                <select id="city">
+                    <option selected disabled value="default">지역을 선택하세요.</option>
+                    <option>서울</option>
+                    <option>경기</option>
+                    <option>인천</option>
+                </select>
+                <span id="errRegion" class="errMsg"></span>
+            </div>
+            <div id="info__gender" class="gender">
+                <input class="genderRadio" type="radio" name="gender" value="female"><span class="genderText">여성</span>
+                <input class="genderRadio" type="radio" name="gender" value="male"><span class="genderText">남성</span>
+            </div> 
+            <span id="errGender" class="errMsg"></span>
+            <div class="divideLine"></div>
+            <div class="button">
+                <button id = "sub" class="signupButton" disabled="true" onclick="checkInfo()">가입하기</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
