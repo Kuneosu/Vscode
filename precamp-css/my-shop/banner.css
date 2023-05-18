@@ -1,0 +1,50 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.mainBanner {
+    width: 100%;
+    height: 280px;
+    background-image: url(./img/banner.jpg);
+    background-size: cover;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainBanner .text {
+    color: white;
+    font-size: 42px;
+    font-weight: 700;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    animation: moveText 1s ease-in-out;
+}
+
+@keyframes moveText {
+    0% {
+        transform: translateY(70px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width : 767px) {
+    .mainBanner {
+        height: 200px;
+    }
+
+    .mainBanner .text {
+        font-size: 28px;
+    }
+}

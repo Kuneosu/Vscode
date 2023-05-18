@@ -1,0 +1,36 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapper__body {
+    display: flex;
+    padding: 0 5px;
+}
+
+.wrapper__left {
+    padding-left: 10px;
+    padding-right: 15px;
+}
+
+@media screen and (max-width : 767px) {
+    .wrapper__body {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .wrapper__left {
+        margin: 0;
+        padding: 0;
+    }
+}

@@ -1,0 +1,165 @@
+* {
+    box-sizing: border-box;
+}
+
+.box {
+    display: flex;
+    flex-direction: row;
+
+
+    border: 3px solid red;
+
+    width: 600px;
+    height: 100px;
+
+    position: relative;
+
+}
+
+.item {
+    margin: 0;
+    background-color: blue;
+    width: 80px;
+    height: 80px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+    font-weight: 500;
+    margin: 8px;
+
+    position: absolute;
+    top: 0;
+    left: 0px;
+
+    animation: move 1.5s ease-in-out 0s alternate infinite;
+
+}
+
+@keyframes move {
+    from {
+        left: 0px;
+        border-radius: 0px;
+        background-color: blue;
+    }
+
+    to {
+        left: 500px;
+        border-radius: 100px;
+        background-color: green;
+    }
+}
+
+.practice {
+    margin: 10px;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    border: 2px dashed #aaaaaa;
+}
+
+.heart svg {
+    color: red;
+    width: 70px;
+    height: 70px;
+    animation: bounceHeart 0.7s ease-in-out infinite;
+}
+
+@keyframes bounceHeart {
+    0% {
+        transform: scale(1.2);
+    }
+
+    70% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.2);
+    }
+
+}
+
+.star svg {
+    color: rgb(255, 213, 0);
+    width: 70px;
+    height: 70px;
+
+    animation: rotateStar 0.5s ease-in-out alternate infinite;
+}
+
+@keyframes rotateStar {
+    from {
+        transform: scaleX(0)
+    }
+
+    to {
+        transform: scaleX(1)
+    }
+
+}
+
+.mouse {
+    width: 40px;
+    height: 70px;
+    border: 3px solid black;
+    border-radius: 20px;
+
+    position: relative;
+}
+
+.wheel {
+    width: 5px;
+    height: 10px;
+    background-color: black;
+
+    position: absolute;
+    top: 10px;
+    left: 15px;
+
+    border-radius: 40%;
+}
+
+.m1 {
+    animation: moveMouse 0.6s ease-in-out alternate infinite;
+}
+
+.m2 .wheel {
+    animation: moveMouse 1.2s ease-in-out infinite;
+
+}
+
+@keyframes moveMouse {
+    from {
+        transform: translateY(0);
+    }
+
+    to {
+        transform: translateY(15px);
+    }
+
+}
+
+.rotate-right svg {
+    width: 70px;
+    height: 70px;
+
+    animation: rotateRight 1s linear infinite;
+}
+
+@keyframes rotateRight {
+    from {
+        transform: rotate(0);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+
+}

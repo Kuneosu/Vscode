@@ -1,0 +1,17 @@
+* {
+    box-sizing: border-box;
+}
+
+.flex-container {
+    height: 300px;
+    padding: 10px;
+    border: 2px solid red;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.flex-container div {
+    border: 2px solid blue;
+}

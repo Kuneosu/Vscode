@@ -1,3 +1,11 @@
+const ff = () => {
+    let condition = document.getElementById("p1").value
+
+    if(condition === ""){
+        document.getElementById("number").innerText="바꼈죠 ?"
+    }
+}
+
 const changeFocus1 = () =>{
 
     let phone1 = document.getElementById("p1").value

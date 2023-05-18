@@ -1,0 +1,22 @@
+* {
+    box-sizing: border-box;
+}
+
+/* 상속 가능
+- color
+- font-size 
+
+상속 불가능
+- border
+*/
+.container {
+    color: blue;
+    font-size: 38px;
+
+    border: 4px solid orange;
+}
+
+/* 자식 선택자가 더 높은 우선순위를 가짐 */
+.inner-box {
+    color: red;
+}

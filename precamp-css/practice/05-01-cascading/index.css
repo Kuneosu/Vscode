@@ -1,0 +1,16 @@
+* {
+    box-sizing: border-box;
+    background-color: yellow;
+}
+
+div {
+    background-color: aqua;
+}
+
+.text-class {
+    background-color: blue;
+}
+
+#text-id {
+    background-color: red;
+}

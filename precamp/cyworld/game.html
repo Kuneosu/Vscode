@@ -22,7 +22,7 @@
                 <input class="textbox" id="myword" placeholder="단어를 입력하세요">
                 <button class="search" onclick="startWord()">입력</button>
             </div>
-            <div id="result" class="word__result">결과 !</div>
+            <div id="result" class="word__result">단어를 입력해주세요</div>
         </div>
         <div class="game__container">
             <img src="./images/lotto.png">
@@ -30,16 +30,16 @@
             <div class="game__subtitle">버튼을 누르세요.</div>
             <div class="lotto__number">
                 <div class="numberbox">
-                    <span>3</span>
-                    <span>5</span>
-                    <span>10</span>
-                    <span>24</span>
-                    <span>30</span>
-                    <span>34</span>
+                    <span id="n1">0</span>
+                    <span id="n2">0</span>
+                    <span id="n3">0</span>
+                    <span id="n4">0</span>
+                    <span id="n5">0</span>
+                    <span id="n6">0</span>
                 </div>
             </div>    
             
-            <div class="buttonbox"><button class="playlotto">Button</button></div>
+            <div class="buttonbox"><button class="playlotto" onclick="lotto()">번호 생성</button></div>
         </div>
     </div>
 </body>

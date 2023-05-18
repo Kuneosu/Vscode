@@ -1,0 +1,59 @@
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    padding: 10px;
+}
+
+.button {
+    background-color: #123ecf;
+    color: white;
+
+    width: 200px;
+    text-align: center;
+
+    padding: 10px;
+    border-radius: 5px;
+
+    margin: 20px 15px;
+}
+
+.button:hover {
+    cursor: pointer
+}
+
+.button1 {
+    transition-property: width;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+
+    /* transition: width 0.3s ease-in-out; */
+}
+
+.button1:hover {
+    width: 300px;
+}
+
+.button2 {
+    transition-property: width, background-color;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+
+    /* transition: all 0.3s ease-in-out; */
+}
+
+.button2:hover {
+    width: 300px;
+    background-color: #002398;
+}
+
+.button3 {
+    transition: width 0.3s ease-in-out 0.5s, background-color 0.2s ease-in-out;
+    /* transition: background-color 0.2s ease-in-out, width 0.3s ease-in-out 0.5s; */
+}
+
+.button3:hover {
+    background-color: #002398;
+    width: 300px;
+}

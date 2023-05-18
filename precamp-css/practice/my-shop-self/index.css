@@ -1,0 +1,33 @@
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    border: 1px solid black;
+    display: flex;
+    flex-wrap: wrap;
+    width: 700x;
+}
+
+.item {
+    border: 2px dashed #aaaaaa;
+    width: 20%;
+    padding-bottom: 20%;
+
+    margin: 20px 10px;
+
+    transition: background-color 0.3s ease-in-out;
+}
+
+.item #text1 {
+    color: rgba(0, 0, 0, 0);
+    transition: color 0.5s ease-in-out;
+}
+
+.item:hover {
+    background-color: #aaaaaa;
+}
+
+.item:hover #text1 {
+    color: rgba(0, 0, 0, 1);
+}

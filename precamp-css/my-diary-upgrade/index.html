@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/index.css">
+    <script src="./index.js"></script>
+    <title>My Diary</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__inner">
+            <div class="logo">
+                <div class="movingDot"></div>
+                <h1><a href="#none">HAGD</a></h1>
+            </div>
+            <div class="menu">
+                <ul class="menu__ul">
+                    <li><a href="#none" id="naviYday" onclick="naviYday()">어제의 일기</a></li>
+                    <li><a href="#none" id="naviToday" onclick="naviToday()">오늘의 일기</a></li>
+                    <li><a href="#none" id="naviTomorrow" onclick="naviTomorrow()">내일의 일기</a></li>
+                </ul>
+            </div>
+            <div class="user">
+                <img src="../practice/img/my-diary.png" alt="유저 정보" width="32" height="32">
+            </div>
+
+        </div>
+    </header>
+    <div class="container">
+        <div class="wrapper">
+            <div class="wrapper__head">
+                <h1 class="wrapper__head__title">
+                    나만의 일기장
+                </h1>
+                <p class="wrapper__head__sub-title">
+                    나만의 일기장입니다. <br>
+                    원하는 색과 사이즈로 일기장을 커스텀해보세요. <br>
+                    <span class="point">
+                        Have a Good Day 😆
+                    </span>
+                </p>
+            </div>
+            <hr>
+            <div class="wrapper__body">
+                <iframe id="contentFrame" src="./today.html"></iframe>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>

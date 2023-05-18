@@ -30,6 +30,9 @@ const checkValidation = function() {
         // 하나라도 비어 있을 때
         else{
         document.getElementById("send__button").disabled=true
+        sb.color = ""
+        sb.backgroundColor = ""
+        sb.cursor = ""
     }
 }
 // time : 타이머 3분 , isStarted : 타이머가 실행중인지 여부

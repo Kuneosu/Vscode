@@ -1,0 +1,47 @@
+* {
+    box-sizing: border-box;
+}
+
+.box {
+    height: 200px;
+    background-color: blue;
+    color: white;
+    padding: 30px;
+}
+
+@media screen and (max-width: 800px) {
+    .box {
+        background-color: red;
+    }
+}
+
+.container {
+    display: flex;
+}
+
+.box1 {
+    width: 20%;
+    padding: 30px;
+    background-color: green;
+    color: white;
+}
+
+.box2 {
+    width: 80%;
+    padding: 30px;
+    background-color: orange;
+}
+
+@media screen and (min-width: 800px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .box1 {
+        width: 100%;
+    }
+
+    .box2 {
+        width: 100%;
+    }
+}
