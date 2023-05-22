@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>새 탭</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+
+
+<body>
+    <!-- header 섹션 -->
+    <section class="header">
+        <div class="headerContent">
+            <span>Gmail</span>
+            <span>이미지</span>
+            <i class="fa fa-solid fa-bars"></i>
+            <div class="profileImage">
+                <img src="./img/choco.JPG" alt="" id="profile">
+            </div>
+        </div>
+    </section>
+    <!-- main 섹션 -->
+    <section class="main">
+        <div class="content">
+            <!-- Koogle 제목 -->
+            <div class="title">
+                <!-- 글자별 색상 설정을 위해 span 태그로 구분 -->
+                <span id="t1">K</span>
+                <span id="t2">o</span>
+                <span id="t3">o</span>
+                <span id="t4">g</span>
+                <span id="t5">l</span>
+                <span id="t6">e</span>
+            </div>
+            <!-- 검색창 -->
+            <div class="search">
+                <i class="fa-solid fa-magnifying-glass searchIcon"></i>
+                <input type="text" class="searchInput" placeholder="Koogle 검색 또는 URL 입력">
+                <i class="fa-solid fa-microphone micIcon"></i>
+            </div>
+            <!-- 북마크 모음 -->
+            <div class="bookmark">
+                <!-- div 태그에 onclick"location.href 를 사용하여 링크 설정 -->
+                <div class="item" onclick="location.href='https://naver.com/'">
+                    <div class="itemControl">
+                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                    </div>
+                    <div class="itemIcon">
+                        <img src="./img/naver_icon.png" alt="">
+                    </div>
+                    <div class="itemText">NAVER</div>
+                </div>
+                <div class="item" onclick="location.href='https://youtube.com'">
+                    <div class="itemControl">
+                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                    </div>
+                    <div class="itemIcon">
+                        <img src="./img/youtubeIcon.png" alt="">
+                    </div>
+                    <div class="itemText">Youtube</div>
+                </div>
+                <div class="item" onclick="location.href='https://www.acmicpc.net/'">
+                    <div class="itemControl">
+                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                    </div>
+                    <div class="itemIcon">
+                        <img src="./img/baekjoonIcon.png" alt="">
+                    </div>
+                    <div class="itemText">백준</div>
+                </div>
+                <div class="item">
+                    <div class="itemControl">
+                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                    </div>
+                    <div class="itemIcon">
+                        <img src="./img/programmersIcon.png" alt="">
+                    </div>
+                    <div class="itemText">프로그래머스</div>
+                </div>
+                <div class="item">
+                    <div class="itemControl">
+                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                    </div>
+                    <div class="itemIcon">
+                        <img src="./img/githubIcon.png" alt="">
+                    </div>
+                    <div class="itemText">깃허브</div>
+                </div>
+                <div class="item">
+                    <div class="itemControl">
+                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                    </div>
+                    <div class="itemIcon">
+                        <img src="./img/netflixIcon.png" alt="">
+                    </div>
+                    <div class="itemText">Netflix</div>
+                </div>
+                <div class="item">
+                    <div class="itemControl">
+                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                    </div>
+                    <div class="itemIcon">
+                        <img src="./img/tvingIcon.png" alt="">
+                    </div>
+                    <div class="itemText">티빙</div>
+                </div>
+                <div class="item">
+                    <div class="itemControl">
+                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                    </div>
+                    <div class="itemIcon">
+                        <img src="./img/coupangIcon.png" alt="">
+                    </div>
+                    <div class="itemText">쿠팡</div>
+                </div>
+                <div class="item">
+                    <div class="itemControl">
+                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                    </div>
+                    <div class="itemIcon">
+                        <img src="./img/tstoryIcon.png" alt="">
+                    </div>
+                    <div class="itemText">티스토리</div>
+                </div>
+                <div class="item">
+                    <div class="itemControl">
+                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                    </div>
+                    <div class="itemIcon">
+                        <i class="fa-solid fa-plus"></i>
+                    </div>
+                    <div class="itemText">바로가기 추가</div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+<script src="https://kit.fontawesome.com/7413df67b3.js" crossorigin="anonymous"></script>
+
+</html>
