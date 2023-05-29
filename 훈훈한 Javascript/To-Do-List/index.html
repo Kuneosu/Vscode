@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./index.js" defer></script>
+    <script src="https://kit.fontawesome.com/7413df67b3.js" crossorigin="anonymous" defer></script>
+    <link rel="stylesheet" href="./index.css">
+    <title>To-Do-List</title>
+</head>
+
+<body>
+    <h1>To Do List</h1>
+    <div class="todo__container">
+        <input type="text" id="todo__input" onkeydown="keyCodeCheck()">
+        <ul id="todo__list">
+        </ul>
+    </div>
+    <div class="delete__btn__wrapper">
+        <button onclick="deleteAll()">전체 삭제</button>
+    </div>
+</body>
+
+</html>
