@@ -22,9 +22,9 @@ def generate_korean_name():
     return last_name + first_name
 
 ex_names = []
-# 예시로 5개의 이름 생성
-for i in range(1000):
+# 100개의 이름 생성
+for i in range(100):
     name = generate_korean_name()
     ex_names.append(name)
 
-print(ex_names.
+print(ex_names)
