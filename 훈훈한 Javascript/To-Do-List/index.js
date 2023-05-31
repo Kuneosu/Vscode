@@ -117,3 +117,32 @@ if (savedTodoList) {
         createTodo(savedTodoList[i]);
     }
 }
+
+const weatherSearch = (position) => {
+    console.log(position);
+    const weatherRes = fetch(
+        `https://api.openweathermap.org/data/2.8/onecall?lat=${position.latitude}&lon=${position.longitude}&appid={API_KEY}`);
+    console.log(weatherRes);
+
+}
+
+const accessToGeo = (position) => {
+    // 위치 정보를 관리할 객체 생성
+    const positionObj = {
+        latitude: position.coords.latitude,
+        longitude: position.coords.longitude
+    }
+    weatherSearch(positionObj);
+}
+
+// 사용자의 위치 정보를 가져오는 함수
+const askForLocation = () => {
+    navigator.geolocation.getCurrentPosition(
+        // 사용자가 위치 정보에 접근하는 것을 허용하였을 땐 accessToGeo 아닐 땐 뒤의 함수가 실행
+        accessToGeo, (err) => {
+            console.log(err);
+        }
+    )
+}
+
+askForLocation();
