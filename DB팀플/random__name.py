@@ -1,6 +1,9 @@
 import random
 
-last_names = ['김', '이', '박', '나', '권', '임', '최', '추']
+filepath = 'name.txt'
+f = open(filepath,'w')
+
+last_names = ['김', '이', '박', '나', '권', '임', '최', '추','라','정','하','남']
 
 # 보편적인 한국인 이름 리스트
 first_names = [
@@ -23,8 +26,13 @@ def generate_korean_name():
 
 ex_names = []
 # 100개의 이름 생성
-for i in range(100):
+for i in range(300):
     name = generate_korean_name()
     ex_names.append(name)
 
-print(ex_names)
+i=1
+for name in ex_names:
+    f.write(f'{i} : {name} \n')
+    i=i+1
+
+f.close

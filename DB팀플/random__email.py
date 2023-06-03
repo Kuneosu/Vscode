@@ -1,9 +1,13 @@
 import random
 import string
 
+filepath = 'email.txt'
+f = open(filepath,"w")
+
+
 # 랜덤으로 이메일을 생성하는 함수
 def generate_random_email():
-    domains = ["gmail.com", "yahoo.com", "hotmail.com", "outlook.com", "example.com"]
+    domains = ["gmail.com", "yahoo.com", "hotmail.com", "outlook.com", "naver.com", "daum.net"]
     username_length = random.randint(5, 10)
     domain = random.choice(domains)
     
@@ -16,9 +20,13 @@ def generate_random_email():
 emails = set()
 
 # 100개의 이메일 출력
-while len(emails) < 100:
+while len(emails) < 300:
     email = generate_random_email()
     emails.add(email)
-    
+
+i = 1
 for e in emails:
-    print(e)
+    f.write(f"{i} : {e}\n")
+    i = i+1
+    
+f.close
