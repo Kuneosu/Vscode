@@ -121,8 +121,15 @@ if (savedTodoList) {
 const weatherSearch = (position) => {
     console.log(position);
     const weatherRes = fetch(
-        `https://api.openweathermap.org/data/2.8/onecall?lat=${position.latitude}&lon=${position.longitude}&appid={API_KEY}`);
-    console.log(weatherRes);
+        `https://api.openweathermap.org/data/2.5/weather?lat=${position.latitude}&lon=${position.longitude}&appid=api`
+    ).then((res) => {
+        return res.json();
+    }).then((json) => {
+        console.log(json.name);
+        console.log(json.weather[0].description);
+    }).catch((err) => {
+        console.error(err);
+    });
 
 }
 
@@ -144,5 +151,4 @@ const askForLocation = () => {
         }
     )
 }
-
 askForLocation();
