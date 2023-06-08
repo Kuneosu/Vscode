@@ -3,7 +3,8 @@
 }
 
 body {
-    background-color: azure;
+    background-image: url('./images/Clear.jpg');
+    background-size: cover;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -11,9 +12,19 @@ body {
     min-height: 100vh;
 }
 
+h1 {
+    color: white;
+    text-shadow: 2px 2px gray;
+    opacity: 0.8;
+}
+
 .todo__container {
     max-width: 100%;
     width: 400px;
+}
+
+input {
+    opacity: 0.8;
 }
 
 #todo__input {
@@ -23,6 +34,7 @@ body {
     font-size: 2rem;
     padding: 0.5rem 2rem 0.5rem 0.5rem;
     width: 100%;
+    border-radius: 10px;
 }
 
 #todo__list {
@@ -30,11 +42,14 @@ body {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    border-radius: 10px;
+    opacity: 0.8;
 }
 
 #todo__list li {
     width: 100%;
     border-top: 1px solid rgb(242, 242, 242);
+
     font-size: 1.5rem;
     user-select: none;
     display: flex;
@@ -88,4 +103,12 @@ li:hover i {
     background-color: antiquewhite;
     padding: 0.2rem 1rem;
     cursor: pointer;
+    box-shadow: 3px 3px gray;
+    border-radius: 5px;
+}
+
+.delete__btn__wrapper button:active {
+    box-sizing: none;
+    margin-left: 3px;
+    margin-top: 3px;
 }

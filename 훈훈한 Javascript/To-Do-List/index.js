@@ -5,6 +5,8 @@ const todoList = document.getElementById('todo__list');
 // 로컬 스토리지에 저장되어있는 문자열을 객체 형태로 변환하여 savedTodoList에 저장
 const savedTodoList = JSON.parse(localStorage.getItem('saved-items'));
 
+const savedWeatherData = JSON.parse(localStorage.getItem('saved-weather'));
+
 // TodoList 생성 함수 로컬 스토리지에 저장되어 있던 값을 파라미터로 입력 받을 수 있음
 const createTodo = (storageData) => {
     // 사용자가 입력한 값을 불러와 todoContents에 저장
@@ -64,7 +66,7 @@ const createTodo = (storageData) => {
 // Enter 키 입력 체크 함수
 const keyCodeCheck = () => {
     // keyCode 13 = Enter and 빈칸이 아닐때 리스트 생성
-    if (window.event.keyCode === 13 && todoInput.value !== '') {
+    if (window.event.keyCode === 13 && todoInput.value.trim() !== '') {
         createTodo();
     }
 }
@@ -118,26 +120,51 @@ if (savedTodoList) {
     }
 }
 
-const weatherSearch = (position) => {
-    console.log(position);
+const weatherDataActive = ({ location, weather }) => {
+    const weatherMainList = [
+        'Clear',
+        'Clouds',
+        'Drizzle',
+        'Rain',
+        'Snow',
+        'Thunderstorm'
+    ];
+    weather = weatherMainList.includes(weather) ? weather : "Fog";
+    const locationNameTag = document.querySelector("#locationNameTag");
+    locationNameTag.textContent = location;
+    document.body.style.backgroundImage = `url('./images/${weather}.jpg')`
+
+    if (!savedWeatherData ||
+        savedWeatherData.location !== location ||
+        savedWeatherData.weather !== weather) {
+        localStorage.setItem('saved-weather', JSON.stringify({ location, weather }));
+    }
+}
+
+const weatherSearch = ({ latitude, longitude }) => {
+
     const weatherRes = fetch(
-        `https://api.openweathermap.org/data/2.5/weather?lat=${position.latitude}&lon=${position.longitude}&appid=api`
+        `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=apikey`
     ).then((res) => {
         return res.json();
     }).then((json) => {
-        console.log(json.name);
-        console.log(json.weather[0].description);
+        const weatherData = {
+            location: json.name,
+            weather: json.weather[0].main,
+        }
+        weatherDataActive(weatherData);
     }).catch((err) => {
         console.error(err);
     });
 
 }
 
-const accessToGeo = (position) => {
+const accessToGeo = ({ coords }) => {
+    const { latitude, longitude } = coords
     // 위치 정보를 관리할 객체 생성
     const positionObj = {
-        latitude: position.coords.latitude,
-        longitude: position.coords.longitude
+        latitude,
+        longitude,
     }
     weatherSearch(positionObj);
 }
