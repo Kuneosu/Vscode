@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./scripts/index.js" defer></script>
+    <link rel="stylesheet" href="./styles/index.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <h1 id="main__title">덕초우의 선택은?</h1>
+        <div class="start__box"><button id="start__Btn" onclick="cat_sound(); moveMain();">START</button></div>
+    </div>
+    <audio id="cat" src="./sound/cat1.mp3" oncanplaythrough="enableButton()"></audio>
+</body>
+
+</html>
