@@ -113,7 +113,7 @@ def insert(connection) :
         print("당사자유형 : ",end="")
         party_type = input()
         
-        insert_sql = (f"insert into 당사자 (당사자번호, 이름, 이메일, 연락처, 주민등록번호, 거주지, 당사자유형) values ('{party_number}','{party_name}','{party_email}','{party_phone}','{party_personal}','{party_address}','{party_type}')")
+        insert_sql = (f"insert into 당사자 (당사자번호, 이름, w이메일, 연락처, 주민등록번호, 거주지, 당사자유형) values ('{party_number}','{party_name}','{party_email}','{party_phone}','{party_personal}','{party_address}','{party_type}')")
         print(insert_sql)
         cursor.execute(insert_sql)
         connection.commit()
