@@ -1,8 +1,9 @@
-import { useRef, useState } from "react";
+import { useContext, useRef, useState } from "react";
+import { TodoDispatchContext } from "../App";
 import "./TodoEditor.css"
 
-const TodoEditor = ({ onCreate }) => {
-
+const TodoEditor = () => {
+    const { onCreate } = useContext(TodoDispatchContext);
     // 입력받을 내용의 state
     const [content, setContent] = useState("");
 
