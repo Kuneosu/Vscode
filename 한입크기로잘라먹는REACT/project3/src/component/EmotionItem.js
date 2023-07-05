@@ -1,5 +1,6 @@
 // Home 페이지 내의 감정 아이템 컴포넌트
 import "./EmotionItem.css";
+import React from "react";
 
 // id : emotionId 
 // img : 해당 감정의 이미지 주소
@@ -21,4 +22,4 @@ const EmotionItem = ({ id, img, name, onClick, isSelected }) => {
     );
 };
 
-export default EmotionItem;
+export default React.memo(EmotionItem);

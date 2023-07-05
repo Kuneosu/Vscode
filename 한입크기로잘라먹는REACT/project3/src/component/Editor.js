@@ -1,6 +1,6 @@
 // 일기를 작성하는 페이지
 import "./Editor.css";
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import { getFormattedDate, emotionList } from "../util";
 import { useNavigate } from "react-router-dom";
 import Button from "./Button";
@@ -49,12 +49,14 @@ const Editor = ({ initData, onSubmit }) => {
         navigate(-1);
     }
     // 각각의 감정을 클릭시 클릭한 감정id로 state의 감정id를 업데이트 하는 함수
-    const handleChangeEmotion = (emotionId) => {
-        setState({
+    const handleChangeEmotion = useCallback((emotionId) => {
+        setState((state) => ({
             ...state,
             emotionId,
-        });
-    };
+        }));
+    }, []);
+
+
     return (
         <div className="Editor">
             <div className="editor_section">
