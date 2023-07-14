@@ -1,0 +1,16 @@
+.INFO {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0;
+}
+
+.info_text {
+    font-size: 28px;
+}
+
+.info_input {
+    height: 35px;
+    font-size: 25px;
+    border: none;
+    border-radius: 10px;
+}
